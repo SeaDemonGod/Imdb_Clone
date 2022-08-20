@@ -1,0 +1,270 @@
+:root{
+    --md-dark-color: #1d1d1d;
+    --dark-color: #171717;
+    --light-dark-color: #292929;
+    --yellow-color: #d4aa11;
+}
+
+*{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    margin:auto;
+    padding:0;
+    text-align: center;
+    
+}
+
+
+
+/* Here is styling of header section */
+
+header{
+    height:55px;
+    min-width: 100%;
+    background-color: brown;
+    color:rgb(39 167 43);
+    display:flex;
+    flex-wrap: wrap;
+    align-content:stretch;
+    justify-content: space-around;
+}
+.navigation a:active{
+    color:midnightblue;
+}
+.navigation a:hover{
+   transition-duration: 1s;
+    color:slateblue;
+}
+
+#webname{
+    font-family: sans-serif;
+    font-size: 1.8rem;
+    padding-top: 8px;
+    padding-left: 5px;
+    padding-right: 3px;
+    border:1px solid silver;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: pink;
+    margin-right: auto;
+}
+
+nav{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-around;
+    
+}
+
+.navigation ul{
+    list-style-type: none;
+    margin-right:10px;
+    padding:0;
+    overflow: hidden;
+    justify-content: flex-start;
+
+    
+}
+
+.navigation li {
+   float:left;
+   margin-left:40px;
+}
+
+.navigation li a{
+    color:bisque;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-left: 60px;
+}
+
+
+/* End of Styling of header section  */
+
+.fir{
+    color:red;
+
+}
+.sec{
+    color:aqua;
+}
+.thir{
+    color:fuchsia;
+}
+.four{
+    color:blueviolet;
+}
+.five{
+    color:bisque;
+}
+
+h1{
+    color:aliceblue;
+    font-size: 2.5rem;
+    margin-top:10.5%;
+}
+
+#search_box{
+    height:1.6rem;
+    width:15%;
+    min-width: 292px;
+    color:black;
+    background-color: bisque;
+    border-radius: 8px;
+    border:0px solid;
+    padding: 1rem 2rem;
+    outline:none;
+    font-size: 1.2rem;
+    
+}
+
+/* beginning of main section styling */
+.wrap_box{
+    display:inline-block;
+    margin-top:10%;
+    align-items: center;
+    color:mediumslateblue;
+}
+.search_list{
+    position: fixed;
+    padding-left: 3.5%;
+    max-height: 500px;
+    overflow-y: scroll;
+    z-index: 10;
+   
+}
+
+.search_list .search_list_item{
+    background-color: var(--light-dark-color);
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--dark-color);
+    width: calc(350px - 8px);
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: background-color 200ms ease;
+    -o-transition: background-color 200ms ease;
+    transition: background-color 200ms ease;
+}
+.search_list .search_list_item:Hover{
+    background-color: #1f1f1f;
+}
+
+.search_list_item{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.search_item_thumbnail img{
+    width: 40px;
+    margin-right: 1rem;
+}
+.search_item_info h3{
+    font-weight: 600;
+    font-size: 1rem;
+}
+.search_item_info p{
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    opacity: 0.6;
+}
+/* thumbnails */
+.search_list::-webkit-scrollbar{
+    width: 8px;
+}
+.search_list::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.search_list::-webkit-scrollbar-thumb{
+    background-color: var(--yellow-color);
+    outline: none;
+    border-radius: 10px;
+}
+
+
+/* js related class */
+.hide_search_list{
+    display: none;
+}
+
+
+/*movie results */
+.result_container{
+    padding: 3rem 0;
+}
+.movie_poster img{
+    max-width: 300px;
+    margin: 0 auto;
+    border: 4px solid #fff;
+}
+.movie_info{
+    text-align: center;
+    color: #fff;
+    padding-top: 3rem;
+}
+.result_grid ul{
+   list-style-type: none;
+   color:mediumvioletred;
+}
+
+
+
+/*media queries*/
+
+@media screen and (max-width: 540px) {
+    header{
+        display: inline-flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: stretch;
+    }
+    #webname{
+        text-align: center;
+        background-color: greenyellow;
+        border:none;
+        padding-top: 10px;
+        padding-left: 1px;
+        height:55px;
+        width:165px;
+        margin-left: 1px;
+
+    }
+
+    
+}
+
+@media screen and (min-width:560px){
+    .wrap_box{
+        margin-top:190.3px;
+    }
+    
+}
+
+
+
+
+
+
+.hide_search_list{
+    display:none;
+}
+
+
+
+
+
+
+
+

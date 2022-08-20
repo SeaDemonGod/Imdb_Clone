@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content= "width=device-width, intial-scale =1.0">
+        <title>Imdb Clone</title>
+        <script src="https://kit.fontawesome.com/ceac360b3b.js" crossorigin="anonymous"></script>
+        <link rel="apple-touch-icon" sizes="180x180" href="../asset/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../asset/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../asset/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel= "stylesheet" type="text/css" href= "../css/index.css">
+    </head>
+    <body>
+        <!-- container div for navigation part as header of page -->
+        <header>
+            <div id = "webname">
+
+               Cine Search 
+
+            </div>
+
+            <nav>
+                <div class = "navigation">
+                    <ul>
+                        <li id = "home"><a href ="">Home</a></li>
+                        <li><a class = "navi_fav" href="fav.html", target="_blank">Favourite</a></li>
+                    </ul>
+
+                </div>
+            </nav>
+        </header>
+        <!-- End of navigation header section with logo -->
+        <!-- begining of our search-container -->
+        <main>
+
+            <div class = "wrap_box">
+                <div class = "search_container">
+                    <div class = "search_element">
+            
+                        <h1><b><i><span class = "fir">E</span><span class = "sec">n</span><span class = "thir">t</span><span class = "four">e</span><span class = "five">r</span><span class = "fir">t</span><span class = "sec">a</span><span class = "thir">i</span><span class = "four">n</span><span class = "five">m</span><span class = "fir">e</span><span class = "sec">n</span><span class = "thir">t</span> Rating Search</i></b></h1>
+                        <input class ="form_control" id= "search_box" type = "text" placeholder="Search..." onkeyup="findMovies()" onclick = "findMovies()">
+
+                        <div class = "search_list" id = "search_listing">
+                            <!-- listing here image title information of movies searched -->
+                             <!-- <div class="search-list-item">
+                    <div class="search-item-thumbnail">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMDdmMTBiNTYtMDIzNi00NGVlLWIzMDYtZTk3MTQ3NGQxZGEwXkEyXkFqcGdeQXVyMzMwOTU5MDk@._V1_.jpg" >
+                    </div>
+                    <div class="search-item-info">
+                        <h3>The Batman</h3>
+                        <p>2022</p>
+                    </div>
+                </div> -->
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Ending of search-container here -->
+
+                <!-- begining of result container of our searched information -->
+
+                <div class = "container">
+                    <div class = "result_container">
+                        <div class = "result_grid" id = "result_grid_section">
+                         
+                             <!-- movie information here -->
+
+        <!-- <div class="movie-poster">
+            <img src="https://m.media-amazon.com/images/M/MV5BMDdmMTBiNTYtMDIzNi00NGVlLWIzMDYtZTk3MTQ3NGQxZGEwXkEyXkFqcGdeQXVyMzMwOTU5MDk@._V1_.jpg">
+           </div>
+           <div class="movie-info">
+            <h3 class="movie-title">The Batman</h3>
+            <ul class="movie-misc-info">
+                <li class="year">Year: 2022</li>
+                <li class="rated">Rating: PG-13</li>
+                <li class="released">Released: 04 March 2022</li>
+            </ul>
+            <p class="genre"><b>Genre:</b> Action, Mystery, Superhero, Drama.</p>
+            <p class="writer"><b>Writer:</b> Matt Reeves, Peter Craig.</p>
+            <p class="actors"><b>Actors:</b> Robert Pattinson, Zoë Kravitz, Paul Dano, Colin Farrell, Andy Serkis.</p>
+            <p class="plot"><b>Plot:</b> Batman ventures into Gotham City's underworld when a sadistic killer leaves behind a trail of cryptic clues. As the evidence begins to lead closer to home and the scale of the perpetrator's plans become clear, he must forge new relationships, unmask the culprit and bring justice to the abuse of power and corruption that has long plagued the metropolis.</p>
+            <p class="language"><b>Language:</b> English, Hindi, Telugu, Tamil.</p>
+            <p class="awards"><b><i class="fas fa-award"></i></b><b> Awards:</b> Winner ACCEC Award.</p>
+           </div> -->
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+        </main>
+
+        <script type = "text/javascript" src = "../javasript/index.js"></script>
+        
+    </body>
+</html>
